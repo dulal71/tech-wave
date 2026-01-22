@@ -62,13 +62,10 @@ header{
 
 }
 #hero-section{
-/* width:100vw; */
-
-min-height: 760px;
 background-image: url("./images/hero-bg.png");
 background-size: cover;
 background-repeat: no-repeat;
-vertical-align: middle;
+
 }
 #hero-section{
     padding: 101px 0;
@@ -90,9 +87,96 @@ vertical-align: middle;
     background-image: url("./images/hero-circle.png");
 }
 
+#about{
+ padding-top:50px ; 
+ padding-bottom: 120px;  
+ background-color: #1A0B2E;
+}
+.about-container{
+    margin: 0  auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap:160px ;
+}
+.about-contant{
+    max-width: 1200px;
+    text-align: center;
 
+}
+.about-title{
+   font-size: 3rem; 
+   font-weight: bold;
+   color: #FFFFFF;
+   margin-bottom: 1rem;
+}
+.about-discription ,.sub-discripation{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 80%;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.podcast{
+   display: flex;
+    justify-content: space-evenly;
+   
+   
+   
+}
+.podcast-rate{
+   
+    text-align: center;
+}
+.podcast h1,.podcast i{
+color:#00FF88;
+font-size:4rem ;
+font-weight: bold;
+}
+/* start why choose section */
+#choose{
+  padding: 120px 0;  
+  background-color:#230E3D ;
+}
+.center{
+    text-align: center;
+}
 
+.choose-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+.item-1{
+grid-row: span 2;
+background-color:rgba(53, 17, 101, 0.4) ;
+border-radius: 20px;
 
+}
+.item-2{
+    background-color:rgba(53, 17, 101, 0.4) ;
+    grid-column: span 2;
+    border-radius: 20px;
+}
+.item-3{
+    background-color:rgba(53, 17, 101, 0.4);
+    grid-column: span 2;
+    border-radius: 20px;
+}
+.item-4{
+     background-color:rgba(53, 17, 101, 0.4) ;
+      grid-column: span 2;
+      border-radius: 20px;
+}
+
+.item-5{
+     background-color:rgba(53, 17, 101, 0.4) ;
+     border-radius: 20px;
+   
+}
 
 
 
@@ -154,8 +238,36 @@ vertical-align: middle;
  #navber{
   flex-wrap: wrap;
   gap: 20px;
-  
-
+         
 }   
+#about{
+ padding:40px 20px; 
+}
+.about-container{
+   gap:60px ;
+}
+.podcast{
+    flex-wrap: wrap;
+} 
+.podcast h1,.podcast i{
+
+font-size:2rem ;
+
+}  
+.about-title{
+   font-size: 2rem; 
+  
+}
+.choose-container{
+   
     
+   
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 15px;
+}
+.item-1,.item-2,.item-3,.item-4,.item-5{
+grid-row: span 1;
+grid-row: span 1;
+}
 }
