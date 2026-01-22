@@ -26,6 +26,7 @@
   font-size: 1.5rem;  
   font-weight: bold;
   color: #FFFFFF;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 
 }
@@ -33,9 +34,20 @@
     font-size: 1rem;
     color: #FFFFFF;
     opacity: 60%;
+    line-height: 1.5rem;
     
 }
-
+.duration{
+ font-size: 1rem;
+ font-weight: 500;
+ color: #00FF88;
+ margin-top: 0.8rem;   
+}
+iframe{
+ border-top-left-radius:1rem;   
+  border-top-right-radius:1rem;   
+  width: 100%;
+}
 /* start header section */
 header{
      background-color:#1A0B2E ;
@@ -151,7 +163,7 @@ font-weight: bold;
   padding: 120px 0;  
   background-color:#230E3D ;
 }
-
+     
 .features-container{
     margin: 0 auto;
     max-width: 1200px;
@@ -164,9 +176,7 @@ font-weight: bold;
    max-width:300px ;
 
 }
-.features-container img{
-    margin-bottom: 1rem     ;
-}
+
  .download ,.connect ,
 .interviews{
 background-color:rgba(53, 17, 101, 0.4) ;
@@ -190,16 +200,77 @@ align-items: center;
      border-radius: 20px;
      padding:40px ;   
 }
+#episode{
+    padding:120px 0 ;
+    background-color:#1A0B2E;
+}
+.episode-container{
+    max-width:1200px ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:120px ;
+}
+.video{
+    max-width:1200px ;
+    display: flex;
+   gap:30px ;
+}
 
+.video-card{
+    max-width: 380px;
+    background-color:#250D44 ;
+    border-radius:1rem;
+}
+.video-discription{
+    padding:1.5rem ;
+}
+.host{
+    padding:20px;
+    max-width: 1200px;
+    display: flex;
+ gap:1.5rem ;
+background-color:rgba(53, 17, 101, 0.4) ;
+}
 
+.social-link{
 
+    display: flex;
+    gap: 0.5rem;
+    margin-top:1rem ;
+}
+.social-icon{
+   width: 40px; 
+   height: 40px;
+   border:0.5px solid #FFFFFF ;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer{
+   
+background-image: url("./images/footer-bg.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
 
-
-
-
-
-
-
+}
+.footer-section{
+    max-width: 1360px;
+    margin: 0 auto;
+ justify-content: center;
+ align-items: center;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+  
+}
+.sponsor{
+    display: flex;
+    gap: 40px;
+    max-width: 540px;
+}
 
 
 
@@ -248,15 +319,17 @@ align-items: center;
 
 /* media quary start */
 @media screen and (max-width:576px){
- #navber{
+ #navber ,.sponsor {
   flex-wrap: wrap;
   gap: 20px;
          
-}   
-#about{
+} 
+
+
+#about ,#episode,{
  padding:40px 20px; 
 }
-.about-container{
+.about-container ,.episode-container{
    gap:60px ;
 }
 .podcast{
@@ -280,5 +353,13 @@ grid-template-rows: repeat(1,1fr);
 .interviews ,.resources{
 grid-row: span 1;
 grid-row: span 1;
+}
+.video ,.host  {         
+   flex-direction:column ;
+gap:30px ;
+}
+.host{
+    flex-direction: column;
+    align-items: center;
 }
 }
