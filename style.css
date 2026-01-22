@@ -267,6 +267,7 @@ background-image: url("./images/footer-bg.png");
   
 }
 .sponsor{
+    max-width: 544px ;
     display: flex;
     gap: 40px;
     max-width: 540px;
@@ -319,11 +320,15 @@ background-image: url("./images/footer-bg.png");
 
 /* media quary start */
 @media screen and (max-width:576px){
- #navber ,.sponsor {
+ #navber  {
   flex-wrap: wrap;
   gap: 20px;
          
 } 
+.sponsor{
+ flex-wrap: wrap;
+ 
+}
 
 
 #about ,#episode,{
@@ -335,7 +340,7 @@ background-image: url("./images/footer-bg.png");
 .podcast{
     flex-wrap: wrap;
 } 
-.podcast h1,.podcast i{
+.podcast h1,.podcast{
 
 font-size:2rem ;
 
