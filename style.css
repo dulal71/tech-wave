@@ -19,6 +19,22 @@
   background:linear-gradient(#F7E93F,#FB09B4,#9100F8) ;
     
 }
+.center{
+    text-align: center;
+}
+.section-title{
+  font-size: 1.5rem;  
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+
+}
+.section-discription{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 60%;
+    
+}
 
 /* start header section */
 header{
@@ -119,10 +135,7 @@ background-repeat: no-repeat;
 }
 .podcast{
    display: flex;
-    justify-content: space-evenly;
-   
-   
-   
+    justify-content: space-evenly;   
 }
 .podcast-rate{
    
@@ -134,15 +147,12 @@ font-size:4rem ;
 font-weight: bold;
 }
 /* start why choose section */
-#choose{
+#features{
   padding: 120px 0;  
   background-color:#230E3D ;
 }
-.center{
-    text-align: center;
-}
 
-.choose-container{
+.features-container{
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
@@ -150,32 +160,35 @@ font-weight: bold;
     grid-template-rows: repeat(3,1fr);
     gap: 30px;
 }
-.item-1{
+.audio-features{
+   max-width:300px ;
+
+}
+.features-container img{
+    margin-bottom: 1rem     ;
+}
+ .download ,.connect ,
+.interviews{
+background-color:rgba(53, 17, 101, 0.4) ;
+ grid-column: span 2;
+ border-radius: 20px;
+padding:40px ; 
+}
+
+.premium-audio{
 grid-row: span 2;
 background-color:rgba(53, 17, 101, 0.4) ;
 border-radius: 20px;
-
+padding: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+ justify-content: center;
 }
-.item-2{
-    background-color:rgba(53, 17, 101, 0.4) ;
-    grid-column: span 2;
-    border-radius: 20px;
-}
-.item-3{
-    background-color:rgba(53, 17, 101, 0.4);
-    grid-column: span 2;
-    border-radius: 20px;
-}
-.item-4{
-     background-color:rgba(53, 17, 101, 0.4) ;
-      grid-column: span 2;
-      border-radius: 20px;
-}
-
-.item-5{
+.resources{
      background-color:rgba(53, 17, 101, 0.4) ;
      border-radius: 20px;
-   
+     padding:40px ;   
 }
 
 
@@ -258,15 +271,13 @@ font-size:2rem ;
    font-size: 2rem; 
   
 }
-.choose-container{
-   
-    
-   
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);
-    gap: 15px;
+.features-container{
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(1,1fr);
+ gap: 15px;
 }
-.item-1,.item-2,.item-3,.item-4,.item-5{
+.download ,.connect ,.premium-audio,
+.interviews ,.resources{
 grid-row: span 1;
 grid-row: span 1;
 }
