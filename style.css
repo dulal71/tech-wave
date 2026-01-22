@@ -249,7 +249,7 @@ justify-content: center;
 align-items: center;
 }
 footer{
-   
+  padding: 120px 0; 
 background-image: url("./images/footer-bg.png");
    background-position: center;
    background-size: cover;
