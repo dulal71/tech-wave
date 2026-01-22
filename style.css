@@ -89,6 +89,10 @@ header{
     opacity: 90%;
 
 }
+.nav-icon{
+    color:#FFFFFF ;
+    display: none;
+}
 #hero-section{
 background-image: url("./images/hero-bg.png");
 background-size: cover;
@@ -150,12 +154,16 @@ background-repeat: no-repeat;
     justify-content: space-evenly;   
 }
 .podcast-rate{
-   
-    text-align: center;
+   text-align: center;
 }
 .podcast h1,.podcast i{
 color:#00FF88;
 font-size:4rem ;
+font-weight: bold;
+}
+.podcast i{
+color:#00FF88;
+font-size:3rem ;
 font-weight: bold;
 }
 /* start why choose section */
@@ -172,33 +180,29 @@ font-weight: bold;
     grid-template-rows: repeat(3,1fr);
     gap: 30px;
 }
-.audio-features{
-   max-width:300px ;
 
-}
 
  .download ,.connect ,
 .interviews{
 background-color:rgba(53, 17, 101, 0.4) ;
  grid-column: span 2;
  border-radius: 20px;
-padding:40px ; 
+padding:30px; 
 }
 
 .premium-audio{
 grid-row: span 2;
 background-color:rgba(53, 17, 101, 0.4) ;
 border-radius: 20px;
-padding: 40px;
+padding:30px;
 display: flex;
 flex-direction: column;
-align-items: center;
- justify-content: center;
+justify-content: center;
 }
 .resources{
      background-color:rgba(53, 17, 101, 0.4) ;
      border-radius: 20px;
-     padding:40px ;   
+     padding:30px ;   
 }
 #episode{
     padding:120px 0 ;
@@ -231,6 +235,7 @@ align-items: center;
     display: flex;
  gap:1.5rem ;
 background-color:rgba(53, 17, 101, 0.4) ;
+border-radius: 1rem;
 }
 
 .social-link{
@@ -258,21 +263,20 @@ background-image: url("./images/footer-bg.png");
 }
 .footer-section{
     max-width: 1360px;
-    margin: 0 auto;
+ margin: 0 auto;
  justify-content: center;
  align-items: center;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
   
 }
 .sponsor{
-    max-width: 544px ;
-    display: flex;
-    gap: 40px;
-    max-width: 540px;
+    max-width: 1360px;
+  display: flex;
+    gap:1rem;
+   
 }
-
 
 
 
@@ -325,16 +329,33 @@ background-image: url("./images/footer-bg.png");
   gap: 20px;
          
 } 
+.nav-icon{
+  margin-right: 18px;
+    display:inline;
+}
+.main-btn{
+    display: none;
+}
+.nav-links{
+    display: none;
+}
+.nav-logo{
+    margin-left: 18px;
+}
 .sponsor{
  flex-wrap: wrap;
- 
+ gap:1rem;
+  
 }
+ 
 
 
-#about ,#episode,{
- padding:40px 20px; 
+
+#about ,#episode ,#features{
+ padding: 10px; 
 }
 .about-container ,.episode-container{
+   
    gap:60px ;
 }
 .podcast{
@@ -352,19 +373,28 @@ font-size:2rem ;
 .features-container{
 grid-template-columns: repeat(1,1fr);
 grid-template-rows: repeat(1,1fr);
- gap: 15px;
 }
 .download ,.connect ,.premium-audio,
 .interviews ,.resources{
 grid-row: span 1;
-grid-row: span 1;
-}
+grid-column: span 1;
+
+} 
 .video ,.host  {         
    flex-direction:column ;
-gap:30px ;
+column-gap:30px ;
 }
 .host{
-    flex-direction: column;
+    
     align-items: center;
+    
+}
+footer{
+  padding:10px; 
+}
+.footer-section{
+    padding: 20px 16px;
+  gap: 1rem;
+  
 }
 }
