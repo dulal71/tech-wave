@@ -120,6 +120,13 @@ header{
     color:#FFFFFF ;
     display: none;
 }
+
+.hero-sectin-btn{
+ display: flex;
+    gap: 8px;  
+}
+
+
 #hero-section{
 padding: 100px 0; 
 background-image: url("./images/hero-bg.png");
@@ -157,14 +164,19 @@ justify-content: center;
 align-items: center;
 background-image:url("./images/hero-circle.png");
 background-size: cover;
+}
+.circle-img img{
+animation: rotate 5s ease-in 2s infinite;
+}
+@keyframes  rotate{
+    50%{transform: rotate(360deg);
 
+    }
+    50%{
+transform: rotate(-360deg);
+    }
 
 }
-.hero-sectin-btn{
- display: flex;
-    gap: 8px;  
-}
-
 #about{
  padding-top:50px ; 
  padding-bottom: 120px;  
@@ -399,5 +411,37 @@ footer{
  flex-wrap: wrap;
  gap:1rem;
   
+}
+}
+
+@media screen  and (min-width:576px) and (max-width:992px){
+ header{
+    padding: 24px 24px;
+    
+}
+#hero-section,#about ,#features{
+ padding:20px 20px; 
+}
+#episode{
+   padding:20px 40px;  
+}
+.features-container{
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(1,1fr);
+}   
+.download ,.connect ,.premium-audio,
+.interviews ,.resources{
+grid-row: span 1;
+grid-column: span 2;
+    
+}
+.host  {         
+   flex-direction:column ;
+column-gap:30px ;
+}
+.video ,.host  {         
+   flex-direction:column ;
+column-gap:30px ;
+align-items: center;
 }
 }
